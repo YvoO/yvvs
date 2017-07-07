@@ -1,0 +1,263 @@
+$wit: #ffffff
+$grey: rgba(30,30,30,0.6)
+$marg: 75px
+$pink: #ff7f7f
+
+*
+    margin: 0
+    padding: 0
+
+body
+    color: $wit
+    font-family: Open Sans, Arial
+    background: linear-gradient(-130deg, #FF5722, #607D8B, #263238)
+    background-size: 100000% 100000%
+    animation: BackgroundGradient 20s ease infinite
+
+@keyframes BackgroundGradient
+    0% 
+        background-position: 0% 50%
+    50% 
+        background-position: 100% 50%
+    100% 
+        background-position: 0% 50%
+
+h1, h2, h3, h4, h5
+    text-align: center
+    margin-bottom: $marg
+    font:
+        weight: 300
+        size: 4em
+
+#banner
+    height: 100vh
+    .element
+        position: relative
+        display: inline-block
+        top: 50vh
+        left: 80px
+        font:
+            weight: 300
+            size: 30px
+    .typed-cursor
+        position: relative
+        display: inline-block
+        top: 50vh
+        left: 80px
+        font-size: 30px
+    h1
+        position: relative
+        top: 30vh
+
+#buttons
+    #toplft 
+        display: none
+        position: fixed
+        background-color: $grey
+        padding: 0 23px
+        height: 60px
+        left: 0
+        top: 0
+        color: white
+        z-index: 1001
+    #toprgt 
+        display: none
+        position: fixed
+        background-color: $grey
+        padding: 0 23px
+        height: 60px
+        right: 0
+        top: 0
+        color: white
+        z-index: 1001
+    #toprgt2
+        display: none
+        position: fixed
+        background-color: $grey
+        padding: 0 23px
+        height: 60px
+        right: 0
+        top: 0
+        color: white
+        z-index: 1001
+    #btmmdl 
+        position: fixed
+        background-color: $grey
+        padding: 0 23px
+        height: 60px
+        left: 47%
+        bottom: 0
+        color: white
+        z-index: 1001
+    button
+        border: 0px
+
+#about
+    display: none
+    height: 65vh
+    min-height: 100%
+    background-color: white
+    color: $grey
+    h3
+        margin: $marg 0
+    p
+        padding: 0 0 $marg 0
+        text-align: justify
+    .info
+        position: absolute  
+    .skills
+        position: absolute  
+        right: -1500px
+    .ani
+        position: relative
+        bottom: 10px
+        text-align: center
+        margin: auto
+
+
+#projects
+    display: none
+    height: 100%
+    .select
+        background-color: red
+    .project
+        height: 300px
+        cursor: pointer
+        text-align: center
+        background-color: rgba(255,255,255,0.5)
+        border-right: 1px solid rgba(255,255,255,0.5)
+    h5.blok
+        padding-top: 140px
+        color: white
+        font:
+            size: 20px
+    .projectinfo
+        display: show
+        background: #ffffff
+        color: $grey
+        h3
+            margin: $marg 0 10px 0
+        p.tags
+            text-align: center
+            margin: 0 0 50px 0        
+            font: 
+                weight: 800
+        h5.projecttitle
+            margin: 0 0 30px 0                    
+            font:
+                weight: 800
+                size: 2.5em
+        .content
+            padding: 0 10px
+            background: #ffffff
+            padding: 0 0 $marg 0
+            p
+                text-align: justify
+            a 
+                font-weight: 800
+                text-decoration: none
+                color: #333
+            a:hover
+                color: $pink
+        .bold
+            font-weight: 800
+            text-align: center !important
+            color: $pink
+            margin-top: 30px
+
+
+        .content2  
+            position: relative
+            background: linear-gradient(-130deg, #FF5722, #607D8B, #263238)
+            background-size: 100000% 100000%
+            animation: BackgroundGradient 20s ease infinite  
+            img
+                max-height: 550px
+                margin: auto
+                padding: $marg 0
+            .uitleg
+                display: block
+                position: relative
+                background: #ffffff
+                height: 100%
+
+        .project1
+            display: none
+        .project2
+            display: none        
+        .project3
+            display: none
+        .project4
+            display: none
+
+.hover1
+    background-image: url('/images/PROJECTEN/eves2.png')
+.hover2
+    background-image: url('/images/PROJECTEN/next2.png')
+.hover3
+    background-image: url('/images/PROJECTEN/ocw2.png')
+.hover4
+    background-image: url('/images/PROJECTEN/parkit2.png')
+        
+#contact
+    position: fixed
+    display: none
+    padding-top: 120px
+    height: 100vh
+    width: 100vw
+    z-index: 1000
+    background: rgba(0,0,0,0.8)   
+    .h4
+        text-align: center
+    form
+        .form-control
+            padding: 30px
+            border-radius: 0px
+            border: 0px
+            color: rgba(30,30,30,1)
+            background-color: rgba(255,255,255,1)
+        textarea
+            color: rgba(30,30,30,1)
+            width: 100%
+            margin-top: 20px
+            border-radius: 0px
+            border: 0px solid black
+            padding: 30px                       
+            background-color: rgba(255,255,255,1)
+        .submit
+            width: 100%
+            background-color: #00C853
+            border: 0px solid black
+            margin-top: 20px
+            padding: 30px      
+
+.typed-cursor
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite
+    -moz-animation: blink 0.7s infinite
+    animation: blink 0.7s infinite
+
+@keyframes blink
+    0% 
+        opacity: 1
+    50% 
+        opacity: 0
+    100%
+        opacity: 1
+
+@-webkit-keyframes blink
+    0% 
+        opacity: 1
+    50% 
+        opacity: 0 
+    100% 
+        opacity: 1 
+    
+@-moz-keyframes blink
+    0%
+        opacity: 1 
+    50% 
+        opacity: 0
+    100% 
+        opacity: 1
+    

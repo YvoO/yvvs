@@ -1,0 +1,34 @@
+.head
+  list-style: none
+  position: absolute
+  left: 49%
+  top: 50%
+  transition: all 0.3s ease-in-out
+  transform: translateX(-50%) translateY(-120%)
+  li
+    display: inline-block
+    margin-right: 50px
+    font-family: Open Sans, Arial
+    font-weight: 300
+    color: #fff
+    font-size: 4em
+    opacity: 1
+    transition: all 1s ease-in-out
+    &:last-child
+      margin-right: 0
+
+.fly-in-text1
+  position: absolute
+  left: 49%
+  top: 50%
+  transform: translateX(-50%) translateY(-50%)
+  &.hidden1 li
+    opacity: 0
+    &:nth-child(1)
+      transform: translateX(-200px) translateY(-200px)
+    &:nth-child(2)
+      transform: translateX(20px) translateY(100px)
+    &:nth-child(3)
+      transform: translateX(-150px) translateY(-80px)
+    &:nth-child(4)
+      transform: translateX(10px) translateY(-200px)
