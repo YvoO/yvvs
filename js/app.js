@@ -97,20 +97,45 @@ $(function() {
     //ABOUT AREA
     $('.infobtn').click(function (){
         $('.info').animate({right: '0'});
+        $('.info').show();    
         $('.skills').animate({right: '-150vw'});    
         $('.expo').animate({right: '-300vw'});    
+        setTimeout(function() {
+            $('.skills').hide(); 
+        }, 300);
+        setTimeout(function() {
+            $('.expo').hide(); 
+        }, 300);
+
     });
    
     $('.skillbtn').click(function (){
         $('.info').animate({right: '150vw'});
         $('.skills').animate({right: '0'});    
+        $('.skills').show();    
         $('.expo').animate({right: '-150vh'});  
+        
+        setTimeout(function() {
+            $('.info').hide(); 
+        }, 300);
+        setTimeout(function() {
+            $('.expo').hide(); 
+        }, 300); 
+
    });
    
    $('.expobtn').click(function (){
         $('.info').animate({right: '300vw'});
         $('.skills').animate({right: '150vw'});    
         $('.expo').animate({right: '0'}); 
+        $('.expo').show();   
+
+        setTimeout(function() {
+            $('.skills').hide(); 
+        }, 300);
+        setTimeout(function() {
+            $('.expo').hide(); 
+        }, 300);  
    });
 
 

@@ -33,6 +33,7 @@
       });
       }, 2500);
       });
+      
     </script>
   </head>
   <body>
@@ -85,37 +86,54 @@
       </div>
     </div>
     <div class="container-fluid" id="about">
-      <div class="row">
+      <div class="row pad">
         <h3>ABOUT A BOY</h3>
-        <div class="col-sm-4 col-sm-offset-2">
-          <p> 
-            Hee hello there! It's so nice to see you here! My name is Yvo and i'm 
-            a concept developer, UX &amp UI designer and web developer
-            living in Amsterdam. 
-            <BR></BR>
-            I like to develop new concepts for (digital) products and work these out
-            into proffesional prototypes or products. My goal at this point is to 
-            create products that improves peoples lives by just making it easier or 
-            offering them a helping hand. 
-          </p>
+        <div class="col-xs-12 info">
+          <div class="col-sm-4 col-sm-offset-2">
+            <p> 
+              Hee hello there! It's so nice to see you here! My name is Yvo and i'm 
+              a concept developer, UX &amp UI designer and web developer
+              living in Amsterdam. 
+              <BR></BR>
+              I like to develop new concepts for (digital) products and work these out
+              into proffesional prototypes or products. My goal at this point is to 
+              create products that improves peoples lives by just making it easier or 
+              offering them a helping hand. 
+            </p>
+          </div>
+          <div class="col-sm-4">
+            <p> 
+              You can find some of the projects I've been working on at the bottom of 
+              this page. Some of the projects (web projects) have been developed into 
+              working products, while others (phone projects) are still work in progress.
+              <BR></BR>
+              Please feel free to drop me a line if you are interested in one of the 
+              projects, interested in a collaboration or whatever other reason 
+              you might come up with!
+            </p>
+          </div>
         </div>
-        <div class="col-sm-4">
-          <p> 
-            You can find some of the projects I've been working on at the bottom of 
-            this page. Some of the projects (web projects) have been developed into 
-            working products, while others (phone projects) are still work in progress.
-            <BR></BR>
-            Please feel free to drop me a line if you are interested in one of the 
-            projects, interested in a collaboration or whatever other reason 
-            you might come up with!
-          </p>
+        <div class="col-xs-12 skills">
+          <div class="col-sm-4 col-sm-offset-2">
+            <p>Skills!</p>
+          </div>
+          <div class="col-sm-4">
+            <p>Skills 1234</p>
+          </div>
         </div>
-      </div>
-      <button class="btn">     </button>
-    </div>
-    <div class="container-fluid" id="projects">
-      <div class="row">
-        <h4>Skills</h4>
+        <div class="col-xs-12 expo">
+          <div class="col-sm-4 col-sm-offset-2">
+            <p>Expo!</p>
+          </div>
+          <div class="col-sm-4">
+            <p>Expo 1234</p>
+          </div>
+        </div>
+        <div class="aboutbuttons">
+          <button class="btn infobtn">About</button>
+          <button class="btn skillbtn">Skills</button>
+          <button class="btn expobtn">Experience</button>
+        </div>
       </div>
     </div>
     <div class="container-fluid" id="projects">
@@ -133,35 +151,46 @@
           <h5 class="blok">PARKIT</h5>
         </div>
       </div>
+      <div class="row mobile visible-xs">
+        <div class="col-xs-12 mobileproject mobile1 nr1">
+          <h5 class="blok">EEV</h5>
+        </div>
+        <div class="col-xs-12 mobileproject mobile2 nr2">
+          <h5 class="blok">NEXT</h5>
+        </div>
+        <div class="col-xs-12 mobileproject mobile3 nr3">
+          <h5 class="blok">ONE CARING WORLD</h5>
+        </div>
+        <div class="col-xs-12 mobileproject mobile4 nr4">
+          <h5 class="blok">PARKIT</h5>
+        </div>
+      </div>
       <div class="row projectinfo">
         <div class="col-sm-12 project1">
           <h3>EEV</h3>
           <p class="tags">Concept Development, UX/UI-design, Prototyping</p>
           <div class="row content">
             <div class="col-sm-4 col-sm-offset-2">
-              <p> 
-                Eev is a calendar app with all the functionalities a calendar app should have.
-                It breaks down the rigid walls of standard calendar applications and extend
-                them with a world of local events happening around you. This way your calendar
-                will not only help you to remind planned events, but also helps you find
-                new things to do when you have some spare time!
-              </p>
+              <p> </p>
+              Eev is a calendar app with all the functionalities a calendar app should have.
+              It breaks down the rigid walls of standard calendar applications and extend
+              them with a world of local events happening around you. This way your calendar
+              will not only help you to remind planned events, but also helps you find
+              new things to do when you have some spare time!
             </div>
             <div class="col-sm-4">
-              <p> 
-                It also intergrates your address book into your calendar for a more social 
-                experience. After all, a lot of events take place with friends, families or collegues!
-                That is why the app makes it ridiculously easy to share events with
-                your social groups, keep track of attendance, plan a date to do stuff or 
-                 
-              </p>
+              <p> </p>
+              It also intergrates your address book into your calendar for a more social 
+              experience. After all, a lot of events take place with friends, families or collegues!
+              That is why the app makes it ridiculously easy to share events with
+              your social groups, keep track of attendance, plan a date to do stuff or 
+               
             </div>
             <div class="col-sm-8 col-sm-offset-2">
-              <p class="bold"> 
-                This project is still work in progress. If you are interested in 
-                developing this project, investing in this project or simply just interested,
-                feel free to contact me!
-              </p>
+              <p class="bold"> </p>
+              This project is still work in progress. If you are interested in 
+              developing this project, investing in this project or simply just interested,
+              feel free to contact me!
             </div>
           </div>
           <div class="row content2">
@@ -176,30 +205,27 @@
           <p class="tags">Concept Development, UX/UI-design, Prototyping</p>
           <div class="row content">
             <div class="col-sm-4 col-sm-offset-2">
-              <p> 
-                In the Netherlands 1 out of 3 students quits their studies in the
-                first education year. Because of this a lot of time, money and qualities 
-                gets wasted. The reason for this, is that high school students do not realize 
-                which choice they have to make and therefor most of them do not spend enough
-                time collecting information about studies, see only a few studies and make a hasty
-                choice in the end when the deadline approaches. 
-              </p>
+              <p> </p>
+              In the Netherlands 1 out of 3 students quits their studies in the
+              first education year. Because of this a lot of time, money and qualities 
+              gets wasted. The reason for this, is that high school students do not realize 
+              which choice they have to make and therefor most of them do not spend enough
+              time collecting information about studies, see only a few studies and make a hasty
+              choice in the end when the deadline approaches. 
             </div>
             <div class="col-sm-4">
-              <p> 
-                Next is a concept that helps high school students to make a more
-                aware choice for an education. To do this it uses game- and social elements
-                to motivate the students to put a lot more time and effort into their study choice.
-                Besides that it guides students through a clear pad with easy assignments and
-                keeps track of all the students activities.
-              </p>
+              <p> </p>
+              Next is a concept that helps high school students to make a more
+              aware choice for an education. To do this it uses game- and social elements
+              to motivate the students to put a lot more time and effort into their study choice.
+              Besides that it guides students through a clear pad with easy assignments and
+              keeps track of all the students activities.
             </div>
             <div class="col-sm-8 col-sm-offset-2">
-              <p class="bold"> 
-                This project is still work in progress. If you are interested in 
-                developing this project, investing in this project or simply just interested,
-                feel free to contact me!
-              </p>
+              <p class="bold"> </p>
+              This project is still work in progress. If you are interested in 
+              developing this project, investing in this project or simply just interested,
+              feel free to contact me!
             </div>
           </div>
           <div class="row content2">
@@ -214,21 +240,19 @@
           <p class="tags">Concept Development, UX/UI-design, Web Development</p>
           <div class="row content">
             <div class="col-sm-4 col-sm-offset-2">
-              <p> 
-                One caring world is a website that collects money for charity. 
-                It does this by adding a game element to collecting the money: 
-                Someone can make a donation of €10 on behalve of their country. 
-                The goal is to be the first country with a million people to 
-                donate €10. Once this goal is reached the country will go into 
-                the history books as most carign country of the wolrd! 
-              </p>
+              <p> </p>
+              One caring world is a website that collects money for charity. 
+              It does this by adding a game element to collecting the money: 
+              Someone can make a donation of €10 on behalve of their country. 
+              The goal is to be the first country with a million people to 
+              donate €10. Once this goal is reached the country will go into 
+              the history books as most carign country of the wolrd! 
             </div>
             <div class="col-sm-4">
-              <p> 
-                The idea behind it is to create a hype in which people are being triggered
-                to donate money to charity. This way more people will make a donation and
-                the charity will get more attention. The website can be seen on <a href="https://www.onecaring.world" target="_blank">onecaring.world.</a>
-              </p>
+              <p> </p>
+              The idea behind it is to create a hype in which people are being triggered
+              to donate money to charity. This way more people will make a donation and
+              the charity will get more attention. The website can be seen on <a href="https://www.onecaring.world" target="_blank">onecaring.world.</a>
             </div>
           </div>
           <div class="row content2">
@@ -241,19 +265,17 @@
           <p class="tags">UX/UI-design, Web development</p>
           <div class="row content">
             <div class="col-sm-4 col-sm-offset-2">
-              <p> 
-                Park-it is a webplatform for business areas with large parking lots who wants
-                to have their parking system automated. It makes it easy for employees to 
-                register and deregister cars for themselve or for a customer who is visiting.
-              </p>
+              <p> </p>
+              Park-it is a webplatform for business areas with large parking lots who wants
+              to have their parking system automated. It makes it easy for employees to 
+              register and deregister cars for themselve or for a customer who is visiting.
             </div>
             <div class="col-sm-12 col-sm-4">
-              <p> 
-                The car will then be stored in a database of the parking guard so he can check
-                whether the car is allowed to park there or not. The website can be seen on <a href="http://www.parkit.nl" target="_blank">parkit.nl</a>
-                . However, without sign in credentials there is not much to see here. 
-                But feel free to watch the images below.
-              </p>
+              <p> </p>
+              The car will then be stored in a database of the parking guard so he can check
+              whether the car is allowed to park there or not. The website can be seen on <a href="http://www.parkit.nl" target="_blank">parkit.nl</a>
+              . However, without sign in credentials there is not much to see here. 
+              But feel free to watch the images below.
             </div>
           </div>
           <div class="row content2">
@@ -265,29 +287,31 @@
         </div>
       </div>
     </div>
-    <p>
-      <?php               
-      if(isset($_POST['submit'])) {
-          $to = "contact@yvvs.nl";
-          $from = $_POST['email'];
-          $name = $_POST['name'];                      
-          $subject = $_POST['subject'];
-      
-          $message = $name . " " . $subject . " " .$from . " wrote the following:" . "\n\n" . $_POST['message'];
-          $message2 = "Here is a copy of your message " . $name . "\n\n" . $_POST['message'];
-      
-          $headers = "From:" . $from;
-          $headers2 = "From:" . $to;
-          mail($to,$message,$headers);
-          mail($from,$message2,$headers2); // sends a copy of the message to the sender
-          echo "Mail Sent. Thank you " . $name . ", I will contact you shortly.";
-          // You can also use header('Location: thank_you.php'); to redirect to another page.
-      }                
-      ?>
+    <div class="container-fluid" id="php">
+      <p>
+        <?php               
+        if(isset($_POST['submit'])) {
+        	$to = "contact@yvvs.nl";
+        	$from = $_POST['email'];
+        	$name = $_POST['name'];                      
+        	$subject = $_POST['subject'];
+        
+        	$message = $name . " " . $subject . " " .$from . " wrote the following:" . "\n\n" . $_POST['message'];
+        	$message2 = "Here is a copy of your message " . $name . "\n\n" . $_POST['message'];
+        
+        	$headers = "From:" . $from;
+        	$headers2 = "From:" . $to;
+        	mail($to,$message,$headers);
+        	mail($from,$message2,$headers2); // sends a copy of the message to the sender
+        	echo "Mail Sent. Thank you " . $name . ", I will contact you shortly.";
+        	// You can also use header('Location: thank_you.php'); to redirect to another page.
+        }                
+        ?>
          
-                    
-    </p>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script src="/js/app.js"></script>
+        	  
+      </p>
+    </div>
   </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="/js/app.js"></script>
 </html>

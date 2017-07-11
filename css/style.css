@@ -91,6 +91,8 @@ h1, h2, h3, h4, h5 {
 #about {
   display: none;
   min-height: 65vh;
+  max-width: 100%;
+  overflow: hidden;
   background-color: white;
   color: rgba(30, 30, 30, 0.6); }
   #about .pad {
@@ -102,9 +104,11 @@ h1, h2, h3, h4, h5 {
   #about .info {
     position: relative; }
   #about .skills {
+    display: none;
     position: absolute;
     right: -150vw; }
   #about .expo {
+    display: none;
     position: absolute;
     right: -300vw; }
   #about .aboutbuttons {
