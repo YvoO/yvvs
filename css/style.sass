@@ -2,6 +2,7 @@ $wit: #ffffff
 $grey: rgba(30,30,30,0.6)
 $marg: 75px
 $pink: #ff7f7f
+$blue: #8080fe
 
 *
     margin: 0
@@ -95,58 +96,63 @@ h1, h2, h3, h4, h5
 #about
     display: none
     min-height: 65vh
+    overflow-x: hidden
     background-color: white
     color: $grey
     .pad
         padding: 0 0 $marg 0
+        min-height: 500px
     h3
         margin: $marg 0
     p
         text-align: justify
     .info
-        position: relative
+    	position: relative
     .skills
-        position: absolute
-        right: -150vw
+    	display: none
+    	position: relative
+    	right: -100vw
     .expo
-        position: absolute
-        right: -300vw
+    	display: none
+    	position: relative
+    	right: -100vw
     .aboutbuttons
         position: relative
         text-align: center
-        bottom: -50px
+        bottom: 0
+        margin-bottom: 20px
         .infobtn
             position: relative
-            bottom: 10px
             background: $pink
             color: white
         .skillbtn
             position: relative
-            bottom: 10px
             background: $pink
             color: white
         .expobtn
             position: relative
-            bottom: 10px
             background: $pink
             color: white
-
+        .active
+        	background: $blue
 #projects
     display: none
     height: 100%
     .select
         background-color: red
         .project
-            height: 300px
+            height: 35vh
             cursor: pointer
             text-align: center
             background-color: rgba(255,255,255,0.5)
             border-right: 1px solid rgba(255,255,255,0.5)
         h5.blok
-            padding-top: 140px
+            display: inline
+            line-height: 35vh
             color: white
             font:
                 size: 20px
+            margin-bottom: none
     .mobile
         .mobileproject
             height: 25vh
@@ -232,12 +238,16 @@ h1, h2, h3, h4, h5
 
 .hover1
     background-image: url('/images/PROJECTEN/eves2.png')
+    background-size: cover
 .hover2
     background-image: url('/images/PROJECTEN/next2.png')
+    background-size: cover
 .hover3
     background-image: url('/images/PROJECTEN/ocw2.png')
+    background-size: cover
 .hover4
     background-image: url('/images/PROJECTEN/parkit2.png')
+    background-size: cover
         
 #contact
     position: fixed
