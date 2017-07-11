@@ -82,9 +82,9 @@ html
 							input(type='submit' value='submit' class='submit' name='submit')
 
 		.container-fluid#about
-			.row
+			.row.pad
 				h3 ABOUT A BOY
-				.col-sm-12.info
+				.col-xs-12.info
 					.col-sm-4.col-sm-offset-2
 						p 
 							| Hee hello there! It's so nice to see you here! My name is Yvo and i'm 
@@ -104,13 +104,20 @@ html
 							| Please feel free to drop me a line if you are interested in one of the 
 							| projects, interested in a collaboration or whatever other reason 
 							| you might come up with!
-				.col-sm-12.skills
+				.col-xs-12.skills
 					.col-sm-4.col-sm-offset-2
-						p Test
+						p Skills!
 					.col-sm-4
-						p Testing 1234
-			button.btn.ani Knop
-
+						p Skills 1234
+				.col-xs-12.expo
+					.col-sm-4.col-sm-offset-2
+						p Expo!
+					.col-sm-4
+						p Expo 1234
+				.aboutbuttons
+					button.btn.infobtn About
+					button.btn.skillbtn Skills
+					button.btn.expobtn Experience
 		
 		.container-fluid#projects
 			.row.select.hidden-xs
@@ -121,6 +128,15 @@ html
 				.col-sm-3.project.nr3
 					h5.blok ONE CARING WORLD
 				.col-sm-3.project.nr4
+					h5.blok PARKIT
+			.row.mobile.visible-xs
+				.col-xs-12.mobileproject.mobile1.nr1
+					h5.blok EEV
+				.col-xs-12.mobileproject.mobile2.nr2
+					h5.blok NEXT
+				.col-xs-12.mobileproject.mobile3.nr3
+					h5.blok ONE CARING WORLD
+				.col-xs-12.mobileproject.mobile4.nr4
 					h5.blok PARKIT
 			.row.projectinfo
 				.col-sm-12.project1
@@ -237,25 +253,26 @@ html
 						.col-sm-6
 							img(src="/images/PARKIT/toezichthouder2.png" class="img-responsive phone")
 		
-		p. 
-			<?php               
-			if(isset($_POST['submit'])) {
-				$to = "contact@yvvs.nl";
-				$from = $_POST['email'];
-				$name = $_POST['name'];                      
-				$subject = $_POST['subject'];
+		.container-fluid#php
+			p. 
+				<?php               
+				if(isset($_POST['submit'])) {
+					$to = "contact@yvvs.nl";
+					$from = $_POST['email'];
+					$name = $_POST['name'];                      
+					$subject = $_POST['subject'];
 
-				$message = $name . " " . $subject . " " .$from . " wrote the following:" . "\n\n" . $_POST['message'];
-				$message2 = "Here is a copy of your message " . $name . "\n\n" . $_POST['message'];
+					$message = $name . " " . $subject . " " .$from . " wrote the following:" . "\n\n" . $_POST['message'];
+					$message2 = "Here is a copy of your message " . $name . "\n\n" . $_POST['message'];
 
-				$headers = "From:" . $from;
-				$headers2 = "From:" . $to;
-				mail($to,$message,$headers);
-				mail($from,$message2,$headers2); // sends a copy of the message to the sender
-				echo "Mail Sent. Thank you " . $name . ", I will contact you shortly.";
-				// You can also use header('Location: thank_you.php'); to redirect to another page.
-			}                
-			?>
+					$headers = "From:" . $from;
+					$headers2 = "From:" . $to;
+					mail($to,$message,$headers);
+					mail($from,$message2,$headers2); // sends a copy of the message to the sender
+					echo "Mail Sent. Thank you " . $name . ", I will contact you shortly.";
+					// You can also use header('Location: thank_you.php'); to redirect to another page.
+				}                
+				?>
 		   
 					  
 	script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js')

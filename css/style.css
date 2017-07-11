@@ -90,41 +90,80 @@ h1, h2, h3, h4, h5 {
 
 #about {
   display: none;
-  height: 65vh;
-  min-height: 100%;
+  min-height: 65vh;
   background-color: white;
   color: rgba(30, 30, 30, 0.6); }
+  #about .pad {
+    padding: 0 0 75px 0; }
   #about h3 {
     margin: 75px 0; }
   #about p {
-    padding: 0 0 75px 0;
     text-align: justify; }
   #about .info {
-    position: absolute; }
+    position: relative; }
   #about .skills {
     position: absolute;
-    right: -1500px; }
-  #about .ani {
+    right: -150vw; }
+  #about .expo {
+    position: absolute;
+    right: -300vw; }
+  #about .aboutbuttons {
     position: relative;
-    bottom: 10px;
     text-align: center;
-    margin: auto; }
+    bottom: -50px; }
+    #about .aboutbuttons .infobtn {
+      position: relative;
+      bottom: 10px;
+      background: #ff7f7f;
+      color: white; }
+    #about .aboutbuttons .skillbtn {
+      position: relative;
+      bottom: 10px;
+      background: #ff7f7f;
+      color: white; }
+    #about .aboutbuttons .expobtn {
+      position: relative;
+      bottom: 10px;
+      background: #ff7f7f;
+      color: white; }
 
 #projects {
   display: none;
   height: 100%; }
   #projects .select {
     background-color: red; }
-  #projects .project {
-    height: 300px;
+    #projects .select .project {
+      height: 300px;
+      cursor: pointer;
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-right: 1px solid rgba(255, 255, 255, 0.5); }
+    #projects .select h5.blok {
+      padding-top: 140px;
+      color: white;
+      font-size: 20px; }
+  #projects .mobile .mobileproject {
+    height: 25vh;
+    line-height: 25vh;
     cursor: pointer;
-    text-align: center;
-    background-color: rgba(255, 255, 255, 0.5);
-    border-right: 1px solid rgba(255, 255, 255, 0.5); }
-  #projects h5.blok {
-    padding-top: 140px;
-    color: white;
-    font-size: 20px; }
+    text-align: center; }
+    #projects .mobile .mobileproject h5.blok {
+      display: inline;
+      color: white;
+      font-size: 20px;
+      margin-bottom: none; }
+  #projects .mobile .mobile1 {
+    background-image: url("/images/PROJECTEN/EEVmobile.jpg");
+    background-size: cover; }
+  #projects .mobile .mobile2 {
+    background-image: url("/images/PROJECTEN/NEXTmobile.jpg");
+    background-size: cover; }
+  #projects .mobile .mobile3 {
+    background-image: url("/images/PROJECTEN/OCWmobile.jpg");
+    background-size: cover; }
+  #projects .mobile .mobile4 {
+    background-image: url("/images/PROJECTEN/PARKITmobile.jpg");
+    background-size: cover; }
   #projects .projectinfo {
     display: show;
     background: #ffffff;
@@ -194,11 +233,11 @@ h1, h2, h3, h4, h5 {
 #contact {
   position: fixed;
   display: none;
-  padding-top: 120px;
+  padding-top: 55px;
   height: 100vh;
   width: 100vw;
   z-index: 1000;
-  background: rgba(0, 0, 0, 0.8); }
+  background: rgba(0, 0, 0, 0.85); }
   #contact .h4 {
     text-align: center; }
   #contact form .form-control {
@@ -221,6 +260,9 @@ h1, h2, h3, h4, h5 {
     border: 0px solid black;
     margin-top: 20px;
     padding: 30px; }
+
+#php {
+  display: none; }
 
 .typed-cursor {
   opacity: 1;

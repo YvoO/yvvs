@@ -50,7 +50,7 @@ $(function() {
         $(this).slideUp();
     });
     
-    $('#toplft').click(function(){
+    $('#toplft').hover(function(){
         
         $('#about').show();
         $('#projects').show();
@@ -75,7 +75,7 @@ $(function() {
       
         setTimeout(function() {
             $('#banner').hide();
-        }, 500);
+        }, 1000);
 
         $('html, body').animate({
             scrollTop: $('#about').offset().top
@@ -94,9 +94,28 @@ $(function() {
        
     });
 
+    //ABOUT AREA
+    $('.infobtn').click(function (){
+        $('.info').animate({right: '0'});
+        $('.skills').animate({right: '-150vw'});    
+        $('.expo').animate({right: '-300vw'});    
+    });
+   
+    $('.skillbtn').click(function (){
+        $('.info').animate({right: '150vw'});
+        $('.skills').animate({right: '0'});    
+        $('.expo').animate({right: '-150vh'});  
+   });
+   
+   $('.expobtn').click(function (){
+        $('.info').animate({right: '300vw'});
+        $('.skills').animate({right: '150vw'});    
+        $('.expo').animate({right: '0'}); 
+   });
+
+
 
    // PORTFOLIO AREA
-
     $('.nr1').hover( 
         function(){  $('.select').toggleClass('hover1');
     });
