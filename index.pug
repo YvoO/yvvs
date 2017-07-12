@@ -24,6 +24,7 @@ html
 		link(rel='icon', href='/images/icon.png')
 
 		link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css', integrity='sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u', crossorigin='anonymous')
+		link(rel='stylesheet', href='css/bootstrap/css/bootstrap.min.css', integrity='sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u', crossorigin='anonymous')
 		link(href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,800', rel='stylesheet')
 		link(rel='stylesheet', href='/css/style.css')
 		link(rel='stylesheet', href='/css/open.css')
@@ -32,12 +33,12 @@ html
 		script(src='/js/typed.js')
 		script.
 			document.addEventListener('DOMContentLoaded', function(){
-			setTimeout(function() {
-			Typed.new('.element', {
-			strings: ["Concept developer,", "UX/UI designer,", "Web developer,", "Awesome dude!"],
-			typeSpeed: 0
-			});
-			}, 2500);
+				setTimeout(function() {
+					Typed.new('.element', {
+						strings: ["Concept developer,", "UX/UI designer,", "Web developer,", "Awesome dude!"],
+						typeSpeed: 0
+					});
+				}, 2500);
 			});
 	
 	body
@@ -50,7 +51,7 @@ html
 						li V
 						li S
 				.visible-xs
-					h1 YVVS
+					h1 Y V V S
 				.col-sm-4.col-sm-offset-4
 					.element
 						span.typed-cursor
@@ -83,9 +84,9 @@ html
 
 		.container-fluid#about
 			.row.pad
-				h3 ABOUT A BOY
+				h3#aboutheader ABOUT A BOY
 				.col-xs-12.info
-					.col-sm-4.col-sm-offset-2
+					.col-md-4.col-md-offset-2
 						p 
 							| Hee hello there! It's so nice to see you here! My name is Yvo and i'm 
 							| a concept developer, UX &amp UI designer and web developer
@@ -95,7 +96,7 @@ html
 							| into proffesional prototypes or products. My goal at this point is to 
 							| create products that improves peoples lives by just making it easier or 
 							| offering them a helping hand. 
-					.col-sm-4
+					.col-md-4
 						p 
 							| You can find some of the projects I've been working on at the bottom of 
 							| this page. Some of the projects (web projects) have been developed into 
@@ -105,20 +106,26 @@ html
 							| projects, interested in a collaboration or whatever other reason 
 							| you might come up with!
 				.col-xs-12.skills
-					.col-sm-4.col-sm-offset-2
-						p Skills!
-					.col-sm-4
-						p Skills 1234
+					.col-md-4.col-md-offset-2
+						p HTML/CSS
+						p Pug
+						p jQuery
+						p Javascript
+					.col-md-4
+						p PHP
+						p Python
+						p ReactJS
+						p Webpack
 				.col-xs-12.expo
-					.col-sm-4.col-sm-offset-2
+					.col-md-4.col-md-offset-2
 						p Expo!
-					.col-sm-4
+					.col-md-4
 						p Expo 1234
-				.aboutbuttons
-					button.btn.infobtn About
-					button.btn.skillbtn Skills
-					button.btn.expobtn Experience
-		
+			.aboutbuttons
+				button.btn.infobtn.active About
+				button.btn.skillbtn Skills
+				button.btn.expobtn Experience
+
 		.container-fluid#projects
 			.row.select.hidden-xs
 				.col-sm-3.project.nr1
@@ -140,28 +147,28 @@ html
 					h5.blok PARKIT
 			.row.projectinfo
 				.col-sm-12.project1
-					h3 EEV
+					h3.project EEV
 					p.tags Concept Development, UX/UI-design, Prototyping
 					.row.content
 						.col-sm-4.col-sm-offset-2
 							p 
-							| Eev is a calendar app with all the functionalities a calendar app should have.
-							| It breaks down the rigid walls of standard calendar applications and extend
-							| them with a world of local events happening around you. This way your calendar
-							| will not only help you to remind planned events, but also helps you find
-							| new things to do when you have some spare time!
+								| Eev is a calendar app with all the functionalities a calendar app should have.
+								| It breaks down the rigid walls of standard calendar applications and extend
+								| them with a world of local events happening around you. This way your calendar
+								| will not only help you to remind planned events, but also helps you find
+								| new things to do when you have some spare time!
 						.col-sm-4
 							p 
-							| It also intergrates your address book into your calendar for a more social 
-							| experience. After all, a lot of events take place with friends, families or collegues!
-							| That is why the app makes it ridiculously easy to share events with
-							| your social groups, keep track of attendance, plan a date to do stuff or 
-							| 
+								| It also intergrates your address book into your calendar for a more social 
+								| experience. After all, a lot of events take place with friends, families or collegues!
+								| That is why the app makes it ridiculously easy to share events with
+								| your social groups, keep track of attendance, plan a date to do stuff or 
+								| 
 						.col-sm-8.col-sm-offset-2
 							p.bold 
-							| This project is still work in progress. If you are interested in 
-							| developing this project, investing in this project or simply just interested,
-							| feel free to contact me!
+								| This project is still work in progress. If you are interested in 
+								| developing this project, investing in this project or simply just interested,
+								| feel free to contact me!
 					.row.content2
 						.col-sm-3
 							img(src="/images/EEV/maand.png" class="img-responsive phone")
@@ -177,24 +184,24 @@ html
 					.row.content
 						.col-sm-4.col-sm-offset-2
 							p 
-							| In the Netherlands 1 out of 3 students quits their studies in the
-							| first education year. Because of this a lot of time, money and qualities 
-							| gets wasted. The reason for this, is that high school students do not realize 
-							| which choice they have to make and therefor most of them do not spend enough
-							| time collecting information about studies, see only a few studies and make a hasty
-							| choice in the end when the deadline approaches. 
+								| In the Netherlands 1 out of 3 students quits their studies in the
+								| first education year. Because of this a lot of time, money and qualities 
+								| gets wasted. The reason for this, is that high school students do not realize 
+								| which choice they have to make and therefor most of them do not spend enough
+								| time collecting information about studies, see only a few studies and make a hasty
+								| choice in the end when the deadline approaches. 
 						.col-sm-4
 							p 
-							| Next is a concept that helps high school students to make a more
-							| aware choice for an education. To do this it uses game- and social elements
-							| to motivate the students to put a lot more time and effort into their study choice.
-							| Besides that it guides students through a clear pad with easy assignments and
-							| keeps track of all the students activities.
+								| Next is a concept that helps high school students to make a more
+								| aware choice for an education. To do this it uses game- and social elements
+								| to motivate the students to put a lot more time and effort into their study choice.
+								| Besides that it guides students through a clear pad with easy assignments and
+								| keeps track of all the students activities.
 						.col-sm-8.col-sm-offset-2
 							p.bold 
-							| This project is still work in progress. If you are interested in 
-							| developing this project, investing in this project or simply just interested,
-							| feel free to contact me!
+								| This project is still work in progress. If you are interested in 
+								| developing this project, investing in this project or simply just interested,
+								| feel free to contact me!
 					.row.content2
 						.col-sm-3
 							img(src="/images/NEXT/games1.png" class="img-responsive phone")
@@ -210,18 +217,18 @@ html
 					.row.content
 						.col-sm-4.col-sm-offset-2
 							p 
-							| One caring world is a website that collects money for charity. 
-							| It does this by adding a game element to collecting the money: 
-							| Someone can make a donation of €10 on behalve of their country. 
-							| The goal is to be the first country with a million people to 
-							| donate €10. Once this goal is reached the country will go into 
-							| the history books as most carign country of the wolrd! 
+								| One caring world is a website that collects money for charity. 
+								| It does this by adding a game element to collecting the money: 
+								| Someone can make a donation of €10 on behalve of their country. 
+								| The goal is to be the first country with a million people to 
+								| donate €10. Once this goal is reached the country will go into 
+								| the history books as most carign country of the wolrd! 
 						.col-sm-4
 							p 
-							| The idea behind it is to create a hype in which people are being triggered
-							| to donate money to charity. This way more people will make a donation and
-							| the charity will get more attention. The website can be seen on 
-							a(href="https://www.onecaring.world" target="_blank") onecaring.world.
+								| The idea behind it is to create a hype in which people are being triggered
+								| to donate money to charity. This way more people will make a donation and
+								| the charity will get more attention. The website can be seen on 
+								a(href="https://www.onecaring.world" target="_blank") onecaring.world.
 					.row.content2
 						.col-sm-6
 							img(src="/images/OCW/ocw1.png" class="img-responsive phone")
@@ -233,16 +240,16 @@ html
 					.row.content
 						.col-sm-4.col-sm-offset-2
 							p 
-							| Park-it is a webplatform for business areas with large parking lots who wants
-							| to have their parking system automated. It makes it easy for employees to 
-							| register and deregister cars for themselve or for a customer who is visiting.
+								| Park-it is a webplatform for business areas with large parking lots who wants
+								| to have their parking system automated. It makes it easy for employees to 
+								| register and deregister cars for themselve or for a customer who is visiting.
 						.col-sm-12.col-sm-4
 							p 
-							| The car will then be stored in a database of the parking guard so he can check
-							| whether the car is allowed to park there or not. The website can be seen on 
-							a(href="http://www.parkit.nl" target="_blank") parkit.nl
-							| . However, without sign in credentials there is not much to see here. 
-							| But feel free to watch the images below.
+								| The car will then be stored in a database of the parking guard so he can check
+								| whether the car is allowed to park there or not. The website can be seen on 
+								a(href="http://www.parkit.nl" target="_blank") parkit.nl
+								| . However, without sign in credentials there is not much to see here. 
+								| But feel free to watch the images below.
 					.row.content2
 						.col-sm-6
 							img(src="/images/PARKIT/admin.png" class="img-responsive phone")
@@ -276,4 +283,5 @@ html
 		   
 					  
 	script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js')
+	script(src='/js/jquery/jquery.js')
 	script(src='/js/app.js')

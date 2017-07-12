@@ -48,7 +48,7 @@
           </ul>
         </div>
         <div class="visible-xs">
-          <h1>YVVS</h1>
+          <h1>Y V V S</h1>
         </div>
         <div class="col-sm-4 col-sm-offset-4">
           <div class="element"><span class="typed-cursor"></span></div>
@@ -89,7 +89,7 @@
       <div class="row pad">
         <h3>ABOUT A BOY</h3>
         <div class="col-xs-12 info">
-          <div class="col-sm-4 col-sm-offset-2">
+          <div class="col-md-4 col-md-offset-2">
             <p> 
               Hee hello there! It's so nice to see you here! My name is Yvo and i'm 
               a concept developer, UX &amp UI designer and web developer
@@ -101,7 +101,7 @@
               offering them a helping hand. 
             </p>
           </div>
-          <div class="col-sm-4">
+          <div class="col-md-4">
             <p> 
               You can find some of the projects I've been working on at the bottom of 
               this page. Some of the projects (web projects) have been developed into 
@@ -114,26 +114,26 @@
           </div>
         </div>
         <div class="col-xs-12 skills">
-          <div class="col-sm-4 col-sm-offset-2">
+          <div class="col-md-4 col-md-offset-2">
             <p>Skills!</p>
           </div>
-          <div class="col-sm-4">
+          <div class="col-md-4">
             <p>Skills 1234</p>
           </div>
         </div>
         <div class="col-xs-12 expo">
-          <div class="col-sm-4 col-sm-offset-2">
+          <div class="col-md-4 col-md-offset-2">
             <p>Expo!</p>
           </div>
-          <div class="col-sm-4">
+          <div class="col-md-4">
             <p>Expo 1234</p>
           </div>
         </div>
-        <div class="aboutbuttons">
-          <button class="btn infobtn">About</button>
-          <button class="btn skillbtn">Skills</button>
-          <button class="btn expobtn">Experience</button>
-        </div>
+      </div>
+      <div class="aboutbuttons">
+        <button class="btn infobtn active">About</button>
+        <button class="btn skillbtn">Skills</button>
+        <button class="btn expobtn">Experience</button>
       </div>
     </div>
     <div class="container-fluid" id="projects">
@@ -171,26 +171,29 @@
           <p class="tags">Concept Development, UX/UI-design, Prototyping</p>
           <div class="row content">
             <div class="col-sm-4 col-sm-offset-2">
-              <p> </p>
-              Eev is a calendar app with all the functionalities a calendar app should have.
-              It breaks down the rigid walls of standard calendar applications and extend
-              them with a world of local events happening around you. This way your calendar
-              will not only help you to remind planned events, but also helps you find
-              new things to do when you have some spare time!
+              <p> 
+                Eev is a calendar app with all the functionalities a calendar app should have.
+                It breaks down the rigid walls of standard calendar applications and extend
+                them with a world of local events happening around you. This way your calendar
+                will not only help you to remind planned events, but also helps you find
+                new things to do when you have some spare time!
+              </p>
             </div>
             <div class="col-sm-4">
-              <p> </p>
-              It also intergrates your address book into your calendar for a more social 
-              experience. After all, a lot of events take place with friends, families or collegues!
-              That is why the app makes it ridiculously easy to share events with
-              your social groups, keep track of attendance, plan a date to do stuff or 
-               
+              <p> 
+                It also intergrates your address book into your calendar for a more social 
+                experience. After all, a lot of events take place with friends, families or collegues!
+                That is why the app makes it ridiculously easy to share events with
+                your social groups, keep track of attendance, plan a date to do stuff or 
+                 
+              </p>
             </div>
             <div class="col-sm-8 col-sm-offset-2">
-              <p class="bold"> </p>
-              This project is still work in progress. If you are interested in 
-              developing this project, investing in this project or simply just interested,
-              feel free to contact me!
+              <p class="bold"> 
+                This project is still work in progress. If you are interested in 
+                developing this project, investing in this project or simply just interested,
+                feel free to contact me!
+              </p>
             </div>
           </div>
           <div class="row content2">
@@ -205,27 +208,30 @@
           <p class="tags">Concept Development, UX/UI-design, Prototyping</p>
           <div class="row content">
             <div class="col-sm-4 col-sm-offset-2">
-              <p> </p>
-              In the Netherlands 1 out of 3 students quits their studies in the
-              first education year. Because of this a lot of time, money and qualities 
-              gets wasted. The reason for this, is that high school students do not realize 
-              which choice they have to make and therefor most of them do not spend enough
-              time collecting information about studies, see only a few studies and make a hasty
-              choice in the end when the deadline approaches. 
+              <p> 
+                In the Netherlands 1 out of 3 students quits their studies in the
+                first education year. Because of this a lot of time, money and qualities 
+                gets wasted. The reason for this, is that high school students do not realize 
+                which choice they have to make and therefor most of them do not spend enough
+                time collecting information about studies, see only a few studies and make a hasty
+                choice in the end when the deadline approaches. 
+              </p>
             </div>
             <div class="col-sm-4">
-              <p> </p>
-              Next is a concept that helps high school students to make a more
-              aware choice for an education. To do this it uses game- and social elements
-              to motivate the students to put a lot more time and effort into their study choice.
-              Besides that it guides students through a clear pad with easy assignments and
-              keeps track of all the students activities.
+              <p> 
+                Next is a concept that helps high school students to make a more
+                aware choice for an education. To do this it uses game- and social elements
+                to motivate the students to put a lot more time and effort into their study choice.
+                Besides that it guides students through a clear pad with easy assignments and
+                keeps track of all the students activities.
+              </p>
             </div>
             <div class="col-sm-8 col-sm-offset-2">
-              <p class="bold"> </p>
-              This project is still work in progress. If you are interested in 
-              developing this project, investing in this project or simply just interested,
-              feel free to contact me!
+              <p class="bold"> 
+                This project is still work in progress. If you are interested in 
+                developing this project, investing in this project or simply just interested,
+                feel free to contact me!
+              </p>
             </div>
           </div>
           <div class="row content2">
@@ -240,19 +246,21 @@
           <p class="tags">Concept Development, UX/UI-design, Web Development</p>
           <div class="row content">
             <div class="col-sm-4 col-sm-offset-2">
-              <p> </p>
-              One caring world is a website that collects money for charity. 
-              It does this by adding a game element to collecting the money: 
-              Someone can make a donation of €10 on behalve of their country. 
-              The goal is to be the first country with a million people to 
-              donate €10. Once this goal is reached the country will go into 
-              the history books as most carign country of the wolrd! 
+              <p> 
+                One caring world is a website that collects money for charity. 
+                It does this by adding a game element to collecting the money: 
+                Someone can make a donation of €10 on behalve of their country. 
+                The goal is to be the first country with a million people to 
+                donate €10. Once this goal is reached the country will go into 
+                the history books as most carign country of the wolrd! 
+              </p>
             </div>
             <div class="col-sm-4">
-              <p> </p>
-              The idea behind it is to create a hype in which people are being triggered
-              to donate money to charity. This way more people will make a donation and
-              the charity will get more attention. The website can be seen on <a href="https://www.onecaring.world" target="_blank">onecaring.world.</a>
+              <p> 
+                The idea behind it is to create a hype in which people are being triggered
+                to donate money to charity. This way more people will make a donation and
+                the charity will get more attention. The website can be seen on <a href="https://www.onecaring.world" target="_blank">onecaring.world.</a>
+              </p>
             </div>
           </div>
           <div class="row content2">
@@ -265,17 +273,19 @@
           <p class="tags">UX/UI-design, Web development</p>
           <div class="row content">
             <div class="col-sm-4 col-sm-offset-2">
-              <p> </p>
-              Park-it is a webplatform for business areas with large parking lots who wants
-              to have their parking system automated. It makes it easy for employees to 
-              register and deregister cars for themselve or for a customer who is visiting.
+              <p> 
+                Park-it is a webplatform for business areas with large parking lots who wants
+                to have their parking system automated. It makes it easy for employees to 
+                register and deregister cars for themselve or for a customer who is visiting.
+              </p>
             </div>
             <div class="col-sm-12 col-sm-4">
-              <p> </p>
-              The car will then be stored in a database of the parking guard so he can check
-              whether the car is allowed to park there or not. The website can be seen on <a href="http://www.parkit.nl" target="_blank">parkit.nl</a>
-              . However, without sign in credentials there is not much to see here. 
-              But feel free to watch the images below.
+              <p> 
+                The car will then be stored in a database of the parking guard so he can check
+                whether the car is allowed to park there or not. The website can be seen on <a href="http://www.parkit.nl" target="_blank">parkit.nl</a>
+                . However, without sign in credentials there is not much to see here. 
+                But feel free to watch the images below.
+              </p>
             </div>
           </div>
           <div class="row content2">

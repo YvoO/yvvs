@@ -29,6 +29,8 @@ $(function() {
     }, 9000);
 
     // FLOATING BUTTONS
+    var projectScroll = 1;
+
 
     $('#toprgt').click(function(){
 
@@ -45,13 +47,16 @@ $(function() {
         $('#contact').fadeOut();
         $('#contactback').fadeOut();
         
-        $('#toplft').slideDown();
+        if(projectScroll === 2){
+            $('#toplft').slideDown();
+        }
+
         $('#toprgt').slideDown();
         $(this).slideUp();
     });
     
     $('#toplft').hover(function(){
-        
+        projectScroll = 1;
         $('#about').show();
         $('#projects').show();
       
@@ -96,46 +101,61 @@ $(function() {
 
     //ABOUT AREA
     $('.infobtn').click(function (){
-        $('.info').animate({right: '0'});
-        $('.info').show();    
-        $('.skills').animate({right: '-150vw'});    
-        $('.expo').animate({right: '-300vw'});    
+
+        $(this).addClass('active');
+        $(this).blur();
+        $('.skillbtn').removeClass('active');
+        $('.expobtn').removeClass('active');
+
         setTimeout(function() {
-            $('.skills').hide(); 
-        }, 300);
-        setTimeout(function() {
-            $('.expo').hide(); 
-        }, 300);
+            $('.info').show();        
+            $('.info').animate({right: '0'});
+        }, 500);
+
+        $('.skills').animate({right: '-100vw'}, 300);    
+        $('.skills').hide(300);     
+
+        $('.expo').animate({right: '-100vw'}, 300); 
+        $('.expo').hide(300);       
 
     });
    
     $('.skillbtn').click(function (){
-        $('.info').animate({right: '150vw'});
-        $('.skills').animate({right: '0'});    
-        $('.skills').show();    
-        $('.expo').animate({right: '-150vh'});  
-        
+        $(this).addClass('active');
+        $(this).blur();
+        $('.infobtn').removeClass('active');
+        $('.expobtn').removeClass('active');
+       
         setTimeout(function() {
-            $('.info').hide(); 
-        }, 300);
-        setTimeout(function() {
-            $('.expo').hide(); 
-        }, 300); 
+            $('.skills').show();       
+            $('.skills').animate({right: '0'});
+        }, 500); 
 
+        $('.info').animate({right: '100vw'}, 300);
+        $('.info').hide(300);           
+
+        $('.expo').animate({right: '-100vh'}, 300);  
+        $('.expo').hide(300);        
+  
    });
    
    $('.expobtn').click(function (){
-        $('.info').animate({right: '300vw'});
-        $('.skills').animate({right: '150vw'});    
-        $('.expo').animate({right: '0'}); 
-        $('.expo').show();   
+        $(this).addClass('active');
+        $(this).blur();
+        $('.infobtn').removeClass('active');
+        $('.skillbtn').removeClass('active');
+       
+        setTimeout(function() {
+            $('.expo').show();       
+            $('.expo').animate({right: '0'});
+        }, 500); 
 
-        setTimeout(function() {
-            $('.skills').hide(); 
-        }, 300);
-        setTimeout(function() {
-            $('.expo').hide(); 
-        }, 300);  
+        $('.info').animate({right: '100vw'},300);
+        $('.info').hide(300);        
+
+        $('.skills').animate({right: '100vw'},300);    
+        $('.skills').hide(300);       
+
    });
 
 
@@ -154,6 +174,7 @@ $(function() {
         function(){  $('.select').toggleClass('hover4');
     });
 
+
     $('.nr1').click( function(){ 
 
         $('.projectinfo').slideDown();
@@ -165,6 +186,7 @@ $(function() {
         }, 500);
       
         $('#toplft').slideDown();
+        projectScroll = 2;
 
         $('.project2').hide();
         $('.project3').hide();
@@ -188,6 +210,7 @@ $(function() {
         }, 500);
 
         $('#toplft').slideDown();
+        projectScroll = 2;
 
         $('.project1').hide();
         $('.project3').hide();
@@ -195,7 +218,7 @@ $(function() {
         $('.project2').show();
         
         $('html, body').animate({
-            scrollTop: $('.projectinfo').offset().top
+            scrollTop: $('.project2').offset().top
         }, 300);
 
     });
@@ -211,14 +234,15 @@ $(function() {
        }, 500);
  
         $('#toplft').slideDown();
-   
+        projectScroll = 2;
+  
         $('.project1').hide();
         $('.project2').hide();
         $('.project4').hide();
         $('.project3').show();
 
         $('html, body').animate({
-            scrollTop: $('.projectinfo').offset().top
+            scrollTop: $('.project3').offset().top
         }, 300);
 
     });
@@ -234,6 +258,7 @@ $(function() {
        }, 500);
 
         $('#toplft').slideDown();
+        projectScroll = 2;
 
         $('.project1').hide();
         $('.project2').hide();
@@ -241,7 +266,7 @@ $(function() {
         $('.project4').show();
         
         $('html, body').animate({
-            scrollTop: $('.projectinfo').offset().top
+            scrollTop: $('.project4').offset().top
         }, 300);
 
     });
