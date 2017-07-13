@@ -24,7 +24,9 @@ html
 		link(rel='icon', href='/images/icon.png')
 
 		link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css', integrity='sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u', crossorigin='anonymous')
+
 		link(rel='stylesheet', href='css/bootstrap/css/bootstrap.min.css', integrity='sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u', crossorigin='anonymous')
+		
 		link(href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,800', rel='stylesheet')
 		link(rel='stylesheet', href='/css/style.css')
 		link(rel='stylesheet', href='/css/open.css')
@@ -70,7 +72,7 @@ html
 			.row
 				.col-sm-6.col-sm-offset-3
 					h3 CONTACT
-					form(method='post')
+					form(method='post' action='mailer.php')
 						.col-sm-4
 							input(type='text' class='form-control' name='name' placeholder='Name')
 						.col-sm-4
@@ -85,6 +87,10 @@ html
 		.container-fluid#about
 			.row.pad
 				h3#aboutheader ABOUT A BOY
+				.aboutbuttons
+					button.btn.infobtn.active About
+					button.btn.skillbtn Skills
+					button.btn.expobtn Experience
 				.col-xs-12.info
 					.col-md-4.col-md-offset-2
 						p 
@@ -93,7 +99,7 @@ html
 							| living in Amsterdam. 
 							BR
 							| I like to develop new concepts for (digital) products and work these out
-							| into proffesional prototypes or products. My goal at this point is to 
+							| into professional prototypes or products. My goal at this point is to 
 							| create products that improves peoples lives by just making it easier or 
 							| offering them a helping hand. 
 					.col-md-4
@@ -106,53 +112,94 @@ html
 							| projects, interested in a collaboration or whatever other reason 
 							| you might come up with!
 				.col-xs-12.skills
-					h5 Development
-					.col-md-4.col-md-offset-2
-						p HTML/CSS
+					h5 DEVELOPMENT
+					.col-sm-4.col-sm-offset-2
+						p.skill HTML/CSS
 						.balk
-							.prog
-						p Pug/Sass
+							.htmlProg
+						p.skill Pug/Sass
 						.balk
-							.prog
-						p jQuery
+							.pugProg
+						p.skill jQuery
 						.balk
-							.prog
-						p Javascript
+							.jQueryProg
+						p.skill Javascript
 						.balk
-							.prog
-					.col-md-4
-						p ReactJS
+							.JSProg
+					.col-sm-4
+						p.skill Webpack
 						.balk
-							.prog
-						p Webpack
+							.webpackProg
+							.webpackProgGrow
+						p.skill ReactJS
 						.balk
-							.prog
-						p ES6
+							.reactProg
+							.reactProgGrow
+						p.skill ES6
 						.balk
-							.prog
-						p PHP + MySQL
+							.es6Prog
+							.es6ProgGrow
+						p.skill PHP + MySQL
 						.balk
-							.prog
+							.phpProg
 				.col-xs-12.skills
-					h5 Others
-					.col-md-4.col-md-offset-2
-						p Concept Development
-						p UX-design
-						p UI-design
-					.col-md-4
-						p Photoshop
-						p Illustrator
-						p Sketch
-
+					h5 DESIGN
+					.col-sm-4.col-sm-offset-2
+						p.skill Concept Development
+						.balk
+							.cdProg
+						p.skill UX-design
+						.balk
+							.uxProg
+						p.skill UI-design
+						.balk
+							.uiProg
+					.col-sm-4
+						p.skill Photoshop
+						.balk
+							.psProg
+						p.skill Illustrator
+						.balk
+							.ilProg
+						p.skill Sketch
+						.balk
+							.skProg
 				.col-xs-12.expo
-					.col-md-4.col-md-offset-2
-						p Expo!
-					.col-md-4
-						p Expo 1234
-			.aboutbuttons
-				button.btn.infobtn.active About
-				button.btn.skillbtn Skills
-				button.btn.expobtn Experience
+					.col-sm-8.col-sm-offset-2
+						#accordion.panel-group(role='tablist', aria-multiselectable='true')
+							.panel.panel-default
+								#headingOne.panel-heading(role='tab')
+									h4.panel-title
+										a(role='button', data-toggle='collapse', data-parent='#accordion', href='#collapseOne', aria-expanded='true', aria-controls='collapseOne')
+											| Bitcare | UX-designer & Front-end Developer | 2017 - now 
+								#collapseOne.panel-collapse.collapse.in(role='tabpanel', aria-labelledby='headingOne')
+									.panel-body
+										| Working on both the development department and marketing/sale department. Making improvements to the web and mobile apps by improving the user experience and adding more features for the customers. Beside this i'm working on the website and do small things for marketing.
+							.panel.panel-default
+								#headingTwo.panel-heading(role='tab')
+									h4.panel-title
+										a.collapsed(role='button', data-toggle='collapse', data-parent='#accordion', href='#collapseTwo', aria-expanded='false', aria-controls='collapseTwo')
+											| Y v v s | Founder | 2017 - now
+								#collapseTwo.panel-collapse.collapse(role='tabpanel', aria-labelledby='headingTwo')
+									.panel-body
+										| Yvvs is my own company for which I design and develop digital products for customers. Beside this I'm working on new concepts and sometimes develop these concepts into professional prototypes or products. 
+							.panel.panel-default
+								#headingThree.panel-heading(role='tab')
+									h4.panel-title
+										a.collapsed(role='button', data-toggle='collapse', data-parent='#accordion', href='#collapseThree', aria-expanded='false', aria-controls='collapseThree')
+											| Organiq | Graduation Project | 2016 - 2016
+								#collapseThree.panel-collapse.collapse(role='tabpanel', aria-labelledby='headingThree')
+									.panel-body
+										| During my gradudation project I did research on how a gamified solution solution can help high school children by making a better and more aware choice for a study. Based on the research results I designed a product which can be seen below: NExT!
+							.panel.panel-default
+								#headingFour.panel-heading(role='tab')
+									h4.panel-title
+										a.collapsed(role='button', data-toggle='collapse', data-parent='#accordion', href='#collapseFour', aria-expanded='false', aria-controls='collapseFour')
+											| Bitcare | UX-Designer | 2014 - 2015
+								#collapseFour.panel-collapse.collapse(role='tabpanel', aria-labelledby='headingFour')
+									.panel-body
+										| Started as a intern, but could stay as a part-time employee. I was working on both development department and marketing/sales department. Making improvements to the web and mobile apps by improving the user experience and adding more features for the customers. Also designed the new website and developed it in Joomla. 
+
 
 		.container-fluid#projects
 			.row.select.hidden-xs
@@ -287,29 +334,9 @@ html
 							img(src="/images/PARKIT/beheerder.png" class="img-responsive phone")
 						.col-sm-6
 							img(src="/images/PARKIT/toezichthouder2.png" class="img-responsive phone")
-		
-		.container-fluid#php
-			p. 
-				<?php               
-				if(isset($_POST['submit'])) {
-					$to = "contact@yvvs.nl";
-					$from = $_POST['email'];
-					$name = $_POST['name'];                      
-					$subject = $_POST['subject'];
 
-					$message = $name . " " . $subject . " " .$from . " wrote the following:" . "\n\n" . $_POST['message'];
-					$message2 = "Here is a copy of your message " . $name . "\n\n" . $_POST['message'];
-
-					$headers = "From:" . $from;
-					$headers2 = "From:" . $to;
-					mail($to,$message,$headers);
-					mail($from,$message2,$headers2); // sends a copy of the message to the sender
-					echo "Mail Sent. Thank you " . $name . ", I will contact you shortly.";
-					// You can also use header('Location: thank_you.php'); to redirect to another page.
-				}                
-				?>
-		   
 					  
 	script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js')
 	script(src='/js/jquery/jquery.js')
+	script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js', integrity='sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa', crossorigin='anonymous')
 	script(src='/js/app.js')

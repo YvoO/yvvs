@@ -7,7 +7,7 @@
 		"uuidString": "5313C94C-D4C4-4C6C-9E9A-7A594215EBDF"
 		}
 	],
-"creatorBuild": "25849",
+"creatorBuild": "25813",
 "files": {
 	"\/css\/bootstrap\/css\/bootstrap-theme.css": {
 		"aP": 1,
@@ -1016,7 +1016,7 @@
 		},
 	"\/images\/PROJECTEN\/parkit1.png": {
 		"ft": 32768,
-		"iS": 145928,
+		"iS": 54679,
 		"oA": 0,
 		"oAP": "\/images\/PROJECTEN\/parkit1.png",
 		"oF": 0,
@@ -1156,12 +1156,6 @@
 		"oAP": "\/mailer.php",
 		"oF": 0
 		},
-	"\/prepros-6.config": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/prepros-6.config",
-		"oF": 0
-		},
 	"\/README.md": {
 		"cS": 0,
 		"eF": 1,
@@ -1187,7 +1181,7 @@
 	},
 "projectAttributes": {
 	"creationDate": 514663776,
-	"displayValue": "yvvs",
+	"displayValue": "YVVS",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "meme-chloe"
 	},
@@ -3125,7 +3119,6 @@
 		},
 	"languageDefaultsUserDefined": [
 		],
-	"overrideExternalServerCSS": 0,
 	"previewPathAddition": "",
 	"skippedFoldersString": "log, _logs, logs, _cache, cache, \/storage\/framework\/sessions, node_modules",
 	"sourceFolderName": "source",
